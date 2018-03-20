@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="每日签到"
+            android:textColor="#EBBC2F"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/exit" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ADADAD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="签到规则"
+                android:textColor="#EBBC2F" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="2"
+                android:gravity="center_vertical"
+                android:text="每天仅限签到当天，获得当天奖励，不可补签，签到按照7天一循环。"
+                android:textColor="#EBBC2F" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent"
+            android:background="#ADADAD" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/week_monday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_monday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="10dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="周一"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/week_tuesday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_tuesday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="1dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center_horizontal"
+                        android:text="周二"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/week_wednesday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_wednesday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="1dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_wednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center_horizontal"
+                        android:text="周三"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/week_thursday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_thursday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="10dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="周四"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/week_friday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_friday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="1dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center_horizontal"
+                        android:text="周五"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/week_staurday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_staurday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="1dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_staurday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center_horizontal"
+                        android:text="周六"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/week_sunday_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_sunday_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jb"
+                        android:drawablePadding="1dp"
+                        android:text="+20￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center_horizontal"
+                        android:text="周日"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/week_week_l"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/week_week_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/baoxiang"
+                        android:drawablePadding="1dp"
+                        android:text="+??￥"
+                        android:textColor="#6A6B42" />
+
+                    <TextView
+                        android:id="@+id/week_week"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center_horizontal"
+                        android:text="神秘大奖"
+                        android:textColor="#EFC40A" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_sign"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/week_selector"
+                    android:text="签到"
+                    android:textColor="#EBBC2F"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent"
+            android:background="#ADADAD" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="神秘大奖"
+                android:textColor="#EBBC2F" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="4"
+                android:gravity="center_vertical"
+                android:text="神秘大奖，只有在周末可以点击获得。通过签到次数不同，获得奖励不同，每周签到次数越多，获得的奖励越多"
+                android:textColor="#EBBC2F" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

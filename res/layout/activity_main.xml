@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.zab.sanke.activity.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/dabao" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="达宝"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_selector"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_gold"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@id/iv_3"
+                android:src="@drawable/jinbi" />
+
+            <TextView
+                android:id="@+id/tv_gold"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="100"
+                android:textColor="#F3D346" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:background="#637079" />
+
+            <TextView
+                android:id="@+id/tv_store"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分数"
+                android:textColor="#F7F8F9" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:background="#637079" />
+
+            <TextView
+                android:id="@+id/tv_game_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="场次"
+                android:textColor="#F7F8F9" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:background="#637079" />
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="签到"
+                android:textColor="#F7F8F9" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:background="#637079" />
+
+            <TextView
+                android:id="@+id/tv_shoping"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商城"
+                android:textColor="#F7F8F9" />
+
+            <ImageView
+                android:id="@+id/iv_exit"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_margin="1dp"
+                android:onClick="gameStart"
+                android:scaleType="fitXY"
+                android:src="@drawable/exit" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0081E3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_standard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/standard_seletor"
+                android:onClick="gameStart"
+                android:text="标准模式"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_seletor"
+                android:onClick="gameStart"
+                android:text="计时模式"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_machine"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/mahine_seletor"
+                android:onClick="gameStart"
+                android:text="人机对战"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_pk"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/pk_seletor"
+                android:onClick="gameStart"
+                android:text="好友PK"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#0081E3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_task"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@null" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/title_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_historical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="历史战绩"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="28dp"
+                    android:background="#637079" />
+
+                <TextView
+                    android:id="@+id/tv_friend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="好友列表"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="28dp"
+                    android:background="#637079" />
+
+                <TextView
+                    android:id="@+id/tv_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.zab.sanke.activity.ShopActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:id="@+id/iv_gold"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/jinbi" />
+
+        <TextView
+            android:id="@+id/tv_gold"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="100"
+            android:textSize="18sp"
+            android:textColor="#F3D346" />
+
+        <TextView
+            android:id="@+id/tv_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="精品商城"
+            android:textColor="#FFCE43"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+         <ImageView
+             android:id="@+id/iv_exit"
+             android:layout_width="28dp"
+             android:layout_height="28dp"
+             android:layout_marginEnd="6dp"
+             android:onClick="gameStart"
+             android:layout_gravity="end|center_vertical"
+             android:scaleType="fitXY"
+             android:src="@drawable/exit" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0081E3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/shopping_rg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <RadioButton
+                android:id="@+id/rb_shoped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_seletor"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="拥有"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_heard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_seletor"
+                android:button="@null"
+                android:gravity="center"
+                android:text="头部"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_seletor"
+                android:button="@null"
+                android:gravity="center"
+                android:text="身体"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_seletor"
+                android:button="@null"
+                android:gravity="center"
+                android:text="尾巴"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#0081E3" />
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:numColumns="3"
+            android:padding="2dp" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>
